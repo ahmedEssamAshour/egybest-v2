@@ -1,0 +1,16 @@
+#banner {
+    .form-control[type=search]::placeholder {
+        color: lightgray;
+    }
+    .movie {
+        height: 100vh;
+        position: relative;
+        background-color: black;
+        .movie_bg {
+            @include posA-TL(0, 0);
+            @include w-h(100%, 100%);
+            background: linear-gradient(rgba(white, 0.4), rgba(white, 0.4)), url("../img/iron.jpg") center/cover no-repeat;
+            filter: blur(5px);
+        }
+    }
+}

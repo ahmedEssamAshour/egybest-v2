@@ -1,0 +1,70 @@
+    //gulp filewatcher
+    //aSTYLE($color, $size ,$font-weight)
+    //banner style
+    //TextStyle($color, $txt-align, $size, $linh, $fw,$font-family)
+    //border-BG($border,$border-radus,$bg)
+    @import '_bodyS.scss';
+    .login {
+        height: 110vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        .content {
+            background-color: #000000ad;
+            color: white;
+            .form-group {
+                input {
+                    background-color: #333333;
+                    width: 80%;
+                    color: #fff;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 1px 20px 0;
+                    margin: auto;
+                    border: 0;
+                    outline: none;
+                }
+                button {
+                    background-color: #E50914;
+                    width: 80%;
+                    color: #fff;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 1px 20px 0;
+                    margin: auto;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .face-btn {
+                background: #3b5998;
+                width: 80%;
+                color: #fff;
+                height: 50px;
+                line-height: 50px;
+                padding: 1px 20px 0;
+                margin: auto;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .gmail-btn {
+                background: #ea4335;
+                width: 80%;
+                color: #fff;
+                height: 50px;
+                line-height: 50px;
+                padding: 1px 20px 0;
+                margin: 20px auto 0;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .bg_login {
+            @include w-h(100%, 100%);
+            @include posA-TL(0, 0);
+            background: linear-gradient(rgba(black, 0.7), rgba(black, 0.7)), url("../img/bg.jpg"), no-repeat;
+            background-size: cover;
+        }
+    }

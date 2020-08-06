@@ -1,0 +1,122 @@
+@mixin TextStyle($co, $txt-align, $size, $linh, $fw, $ff) {
+    font-size: $size;
+    @if $linh==0 {}
+    @else {
+        line-height: $linh;
+    }
+    @if $co==0 {}
+    @else {
+        color: $co;
+    }
+    //start of  font-weight
+    @if $fw==0 {}
+    @else {
+        font-weight: $fw;
+    }
+    //end of  font-weight
+    @if $txt-align==0 {}
+    @else {
+        text-align: $txt-align;
+    }
+    @if $ff==0 {}
+    @else {
+        font-family: $ff;
+    }
+}
+
+@mixin p-style($pc, $ps, $pm, $pls) {
+    color: $pc;
+    font-size: $ps;
+    margin: $pm;
+    @if $pls==0 {}
+    @else {
+        letter-spacing: $pls;
+    }
+}
+
+@mixin m-p($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+
+@mixin w-h($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin w-h-p-m($w, $h, $p, $m) {
+    width: $w;
+    height: $h;
+    padding: $p;
+    margin: $m;
+}
+
+@mixin W-H-P-M-BG($w, $h, $p, $m, $bg) {
+    width: $w;
+    height: $h;
+    padding: $p;
+    margin: $m;
+    @if $bg==0 {}
+    @else {
+        background-color: $bg;
+    }
+}
+
+@mixin flex-DI-wrap-W-H-j-a_i($di, $wr, $w, $h, $just, $ai) {
+    display: flex;
+    flex-wrap: $wr;
+    flex-direction: $di;
+    width: $w;
+    height: $h;
+    justify-content: $just;
+    align-items: $ai;
+}
+
+@mixin img-BG-BgS-W-H($b, $s, $w, $h) {
+    background: url($b);
+    background-size: ($s);
+    width: $w;
+    height: $h;
+}
+
+@mixin border-BG($b, $br, $bg) {
+    border: $b;
+    border-radius: $br;
+    @if $bg==0 {}
+    @else {
+        background: $bg;
+    }
+}
+
+@mixin aSTYLE($c, $size, $w) {
+    text-decoration: none;
+    color: $c;
+    font-size: $size;
+    font-weight: $w;
+}
+
+@mixin Remove-ul-D-Style() {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin posR() {
+    position: relative;
+}
+
+@mixin posA-TL($tp, $le) {
+    position: absolute;
+    top: $tp;
+    left: $le;
+}
+
+@mixin posA-BR($b, $r) {
+    position: absolute;
+    bottom: $b;
+    right: $r;
+}
+
+@mixin posSt($top, $left) {
+    position: sticky;
+}
